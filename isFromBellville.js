@@ -1,5 +1,5 @@
 var isFromBellville = function(registration){
-var result = Bellville.startsWith(CY);
+var result = registration.startsWith("CY");
 return result
 };
-isFromBellville();
+isFromBellville('registration');
