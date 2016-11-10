@@ -1,11 +1,8 @@
-var countRegNunber = function(Regumber) 
+var countRegNunber = function(data) {
+    var newData = data.split(',')
+    var results = newData.length
+    return results
 
+};
 
-var CA 182736,CY 523519,CJ 812328 = function (Regnumber){
-  return 'CA 182736,CY 523519,CJ 812328'
-
-
-
-
-}
-assert.equal(countRegNunber('CA 182736,CY 523519,CJ 812328'))
+countRegNunber('CA 182736,CY 523519,CJ 812328');
