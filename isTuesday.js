@@ -1,7 +1,5 @@
-var assert = require ('assert');
-var isTuesday = function(true,false);{
-var result = (typeof)
+var isTuesday = function(today){
+var result =today.startsWith('Tu');
 return result
-
 };
-console.log('typeof');
+isTuesday('today');
