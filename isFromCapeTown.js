@@ -1,6 +1,9 @@
-var isFromCapeTown = function(registration){
- var result = registration.startsWith("CA");
+const assert = require('assert');
+var isFromCapeTown = function(regNumber,origin){
+ var result = regNumber.startsWith("CA");
+ 
  return result
 
 };
-isFromCapeTown('registration');
+
+assert.equal(isFromCapeTown('CA'),true);

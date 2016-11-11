@@ -1,7 +1,9 @@
-var  isFromGauteng = function(registration){
-var result = registration.startsWith("DR");
-var result = registration.endsWith("GP");
+const assert = require('assert');
+var  isFromGauteng = function(regNumber,origin){
+var result = regNumber.startsWith("DR");
+var isFrom = regNumber.endsWith("GP");
+
 return result
 
 };
-isFromGauteng("registration");
+assert.equal(isFromGauteng('DR','GP'),true );

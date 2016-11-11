@@ -1,5 +1,6 @@
 const assert = require('assert');
-var ubuntu = function () {
+var ubuntu = function (greet) {
+  var result = (name)
 
 }
-assert.equal("greet("Kirah"),"hi, kirah");
+assert.equal(greet("Kirah"), "hi, kirah");

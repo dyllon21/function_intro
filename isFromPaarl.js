@@ -1,6 +1,7 @@
-var isFromPaarl = function(registration){
- var result = registration.startsWith("CJ");
+const assert = require('assert');
+var isFromPaarl = function(regNumber,origin){
+ var result = regNumber.startsWith("CJ");
  return result
 
 };
-isFromPaarl("registration");
+assert.equal(isFromPaarl("CJ"),true);
