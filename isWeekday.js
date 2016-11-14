@@ -1,10 +1,9 @@
-var isWeekday = function(day){
+const assert = require('assert');
+var isWeekday = function(weekday){
   const date = new Date('2010-04-01');
-  var weekdays = ("Monday", "Tuesday","Wednesday","Thursday","Friday");
-  var result = day.startsWith('01');
-console.log(result);
+  var result = weekday.startsWith(0);
+  var result2 =weekday.endsWith(5);
   return result
-
 };
 
-isWeekday('day');
+assert.equal(isWeekday('weekday'),false) ;
